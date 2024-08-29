@@ -12,5 +12,4 @@
     include ($mainFolderPath.'/modules/tb-pr-styles-and-scripts.php');
     include ($mainFolderPath.'/modules/tb-pr-admin-pages.php');
     include ($mainFolderPath.'/modules/tb-pr-custom-post-types.php');
-    // include ($mainFolderPath.'/tb-pr-install/tb-pr-install.php');
 

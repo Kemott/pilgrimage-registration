@@ -18,8 +18,9 @@
     }
 
     function tb_pr_set_admin_pages(){
-        add_menu_page('Zapisy', 'Zapisy', 'manage_options', 'tb-pr-registration', 'tb_pr_options_page', 'dashicons-groups', 3);
-        add_submenu_page('tb-pr-registration', "Pielgrzymki", 'Pielgrzymki', 'manage_options', 'tb-pr-pilgrimages', 'tb_pr_pilgrimages_page');
+        add_menu_page('Pielgrzymka', 'Pielgrzymka', 'manage_options', 'tb-pr-pilgrimage', '', 'dashicons-location-alt', 2);
+        add_submenu_page('tb-pr-pilgrimage', "Edycje", 'Edycje', 'manage_options', 'tb-pr-pilgrimages', 'tb_pr_pilgrimages_page');
+        add_submenu_page('tb-pr-pilgrimage','Ustawienia', 'Ustawienia', 'manage_options', 'tb-pr-registration', 'tb_pr_options_page', 'dashicons-groups');
         add_action('admin_init', 'tb_pr_register_settings');
     }
 
