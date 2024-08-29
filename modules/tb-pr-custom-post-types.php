@@ -11,7 +11,8 @@
         ]);
 
         register_taxonomy('city', 'parish', array(
-            'label' => 'Miejscowości'
+            'label' => 'Miejscowości',
+            'show_in_rest' => true
         ));
     }
 
@@ -23,11 +24,17 @@
             'show_in_rest' => true,
             'menu_position' => 2,
             'menu_icon' => 'dashicons-admin-multisite',
-            'supports' => array('title')
+            'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+            'public' => true
         ]);
 
         register_taxonomy('days', 'path', array(
-            'label' => 'Dni'
+            'label' => 'Dni',
+            'show_in_rest' => true
+        ));
+        register_taxonomy('stop_type', 'path', array(
+            'label' => 'Typ',
+            'show_in_rest' => true
         ));
     }
 
